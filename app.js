@@ -33,7 +33,9 @@ app.get("/blog", (req, res) => {
     res.sendFile(__dirname + '/views/blog.html');
 })
 
-
+app.get("/api/projects", (req, res) => {
+    res.sendFile(__dirname + '/data/projects.json');
+})
 
 
 
